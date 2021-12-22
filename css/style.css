@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--color-text);
   font-weight: bold;
   font-size: var(--def-size);
@@ -37,27 +37,30 @@ body {
   object-fit: contain;
 }
 
-
 /* Header */
 
 .header {
-    position: relative;
+  position: relative;
   margin-top: 40px;
   padding-bottom: 40px;
   background: #ffffff;
 }
 
 .header:after {
-    display: block;
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100px;
-    top: 100%;
-    left: 0;
-  background: linear-gradient(180deg, rgba(229,229,229,1) 0%, rgba(255,255,255,0) 100%);
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100px;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(229, 229, 229, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   pointer-events: none;
-    z-index: 1;
+  z-index: 1;
 }
 
 .header__inner {
@@ -109,7 +112,8 @@ body {
   margin: 70px 0;
 }
 
-.products__inner {}
+.products__inner {
+}
 
 .product__image {
   max-width: 150px;
@@ -118,8 +122,10 @@ body {
 
 .grid-col-3 {
   display: grid;
-  grid-template-columns: /* minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr) */
-  repeat(3, 1fr);
+  grid-template-columns: /* minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr) */ repeat(
+    3,
+    1fr
+  );
   column-gap: 30px;
   margin-bottom: 50px;
 }
@@ -177,7 +183,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  transition: .25s ease-out;
+  transition: 0.25s ease-out;
 }
 
 .product__price span {
@@ -323,5 +329,27 @@ body {
   .k-bottom__title {
     line-height: 1.2;
     font-size: 42px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header {
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header__inner {
+    row-gap: 5px !important;
+  }
+  .k-top {
+    padding: 150px 0 20px 0;
+    background-position: left top;
+    background-size: auto 170px;
+  }
+  .k-top__title {
+    margin-bottom: 5px;
+    font-size: 36px;
+  }
+  .products {
+    margin-top: 0px;
   }
 }

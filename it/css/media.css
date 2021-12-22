@@ -1,0 +1,106 @@
+@media screen and (max-width:1024px) {
+  .grid-col-3,
+  .grid-col-2 {
+    gap: 30px;
+  }
+  .grid-col-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .header__logo {
+    max-width: 300px;
+  }
+  .header__text span {
+    font-size: 20px;
+    color: var(--accent);
+  }
+  .grid-col-3 .products__item,
+  .grid-col-2 .products__item {
+    justify-content: stretch;
+    column-gap: 20px;
+  }
+  .grid-col-3 .product__left-side {
+    min-width: 150px;
+  }
+  .grid-col-3 .product__right-side {
+    max-width: 100%;
+    align-items: flex-end;
+  }
+  .grid-col-3 .product__right-side p {
+    margin-bottom: 0;
+    font-size: 16px;
+    max-width: 247px;
+  }
+  .grid-col-3 .product__left-side a {
+    margin-top: 30px;
+  }
+  .grid-col-3 .product__head {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .grid-col-3,
+  .grid-col-2 {
+    grid-template-columns: 1fr;
+  }
+  .products__item {
+    max-width: 100%;
+    border-bottom: 1px solid rgb(177, 177, 177);
+    padding-bottom: 20px;
+  }
+  .grid-col-3 .product__right-side,
+  .grid-col-2 .product__right-side {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .grid-col-3 .products__item,
+  .grid-col-2 .products__item {
+    justify-content: space-evenly;
+  }
+  .product__right-side h3 {
+    margin-bottom: 30px;
+  }
+  .link-new {
+    display: block;
+  }
+  .product__left-side .link-orig {
+    display: none;
+  }
+}
+
+@media screen and (max-width:585px) {
+  .grid-col-2 .product__right-side p {
+    max-width: 100%;
+  }
+  .header__inner {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .header__text {
+    align-self: flex-end;
+  }
+  .products__item,
+  .grid-col-2 .product__right-side,
+  .grid-col-3 .product__right-side {
+    flex-direction: column;
+  }
+  .grid-col-3 .product__right-side p {
+    max-width: 100%;
+  }
+  .grid-col-3 .product__left-side,
+  .grid-col-2 .product__left-side {
+    min-width: 100%;
+    margin-bottom: 30px;
+  }
+  .product__image {
+    margin: 0 auto;
+  }
+  .grid-col-3 .product__head,
+  .grid-col-2 .product__head {
+    max-width: 100%;
+  }
+  .grid-col-3 .product__right-side,
+  .grid-col-2 .product__right-side {
+    align-items: center;
+  }
+}

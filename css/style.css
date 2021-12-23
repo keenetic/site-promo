@@ -337,13 +337,21 @@ body {
     margin-top: 10px;
     padding-bottom: 10px;
   }
+  .header:after {
+    height: 20px;
+  }
   .header__inner {
     row-gap: 5px !important;
   }
   .k-top {
-    padding: 150px 0 20px 0;
+    padding: 20px 0;
     background-position: left top;
     background-size: auto 170px;
+    background: transparent !important;
+  }
+  .k-top__content p {
+    font-size: 15px;
+    line-height: 1.2;
   }
   .k-top__title {
     margin-bottom: 5px;
